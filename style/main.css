@@ -1,18 +1,35 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  line-height: .9cm;
+}
+
 /*
 *************HEADER**************
 
 */
 .header {
+  width: 100%;
   height: 100vh;
   background: url("../photography/mountain2.jpeg");
+  background-attachment: fixed;
   background-size: cover;
   background-position-y: center;
   position: relative;
-  color: white;
 }
 
 .header nav {
   padding-top: 15px;
+}
+
+.header nav .brand {
+  display: inline;
+  padding: 10px;
+  font-size: 1.5rem;
 }
 
 .header nav .nav {
@@ -32,26 +49,46 @@
 }
 
 .header .head-group {
-  width: 30%;
+  width: 60%;
   position: absolute;
-  bottom: 20%;
+  top: 40%;
   left: 5%;
+}
+
+.header .head-group h1 {
+  font-size: 5rem;
 }
 
 img {
   width: 100%;
   height: auto;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
-.about {
-  padding: 5% 0;
-}
-
-.photos {
+.service {
   padding: 5% 0;
 }
 
 .photos .container .row .col {
   padding: 0;
+}
+
+.photos .container img:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.about, .blog, .photos, .service, footer {
+  padding: 5% 0;
+}
+
+.about .container img {
+  height: 100%;
+}
+
+.blog .mybtn {
+  background-color: transparent;
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */
