@@ -1,7 +1,11 @@
+html{scroll-behavior: smooth;}
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+
 
 }
+
 p{
     font-size: 1.1rem;
     font-weight: lighter;
@@ -21,6 +25,28 @@ p{
     background-position-y: center;
     position: relative;
   
+    .down-btn{
+        transition: .5s;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        font-size: 3rem;
+        background-color: rgba(214, 214, 214, 0.432);
+        // border:1px solid white;
+        border-radius: 50%;
+        width: 70px;
+        text-align: center;
+
+        a{
+            color: white;
+
+            text-decoration: none;
+        }
+    }
+    .down-btn:hover{
+        cursor: pointer;
+        bottom: 1%;
+    }
 
     nav{
 
@@ -52,11 +78,13 @@ p{
     .head-group{
         width: 60%;
         position: absolute;
-        top: 40%;
+        top: 15%;
         left: 5%;
-        
+       
         h1{
-            font-size: 5rem;
+
+            font-size: 7rem;
+
         }
     }
 
@@ -75,22 +103,27 @@ img{
 .service{
     padding: 5% 0;
 }
+
+
 /////////PHOTOS SECTION//////////////
 .photos{
  
     .container{
-        .row .col{
+        .row section{
             padding: 0;
 
         }
         img:hover{
             opacity: .5;
             cursor: pointer;
+            transform: scale(.95);
+            z-index: 10;
         }
     }
 }
 
-//SECTION PADDING
+
+/////////////SECTION PADDING//////////////////////
 .about,.blog,.photos,.service,footer{
     
     padding: 5% 0;
@@ -110,5 +143,34 @@ img{
         border: none;
         
 
+    }
+}
+
+@media screen and(max-width:900px){
+    .header{
+        .head-group{
+            top: 12%;
+         width: 90%;
+            h1{
+                width: 100%;
+                font-size: 4rem;
+                margin: 0;
+                padding: 0;
+            }
+            p{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        nav{
+            ul{
+                li{
+                    display: none;
+                }
+            }
+         
+        }
     }
 }

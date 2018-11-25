@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photography</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -23,14 +23,12 @@
 
 
         <nav role="navigation" class="">
-                <div class="brand"><strong class="bg-dark p-2 m-1">Creative</strong>Shoots</div>
+                <div class="brand"><strong class="bg-dark p-2 m-1">Creative</strong>Shots</div>
 
             <ul class="nav">
-
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -41,33 +39,40 @@
                 praesentium quisquam officiis in!</p>
         </div>
 
+        <div class="down-btn">
+             <a href="#vision"><strong>&DownArrow;</strong></a>
+       
+        </div>
     </header>
 
     <article class="article mt-5 text-dark" role="article">
 
-        <section class="service container">
+        <section class="service container" id="vision">
 
             <div class="row ">
 
-                <section class="col ">
-                    <img src="photography/photographer2.jpeg" class="shadow-lg" alt="photographer2">
+                <section class="col-sm-12 col-lg-6">
+                    <img src="photography/photographer3.jpeg" class="shadow-lg" alt="photographer2">
                 </section>
 
-                <section class="col">
-                    <h2>Our creative vision</h2>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-                        dolorem assumenda nostrum
-                        sunt eaque in nulla quibusdam. Dolorem animi nisi tempora eaque blanditiis beatae dolor quia
-                        odio, temporibus provident reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Delectus tempore aliquam incidunt quisquam accusamus quo velit assumenda deserunt at
-                        quibusdam ex, consectetur atque quos dolorum nobis veritatis. Quis, dignissimos placeat.</p>
-                </section>
+                <section class="col-sm-12 col-lg-6">
+                    <div class="container">
+                            <h2>Our creative vision</h2>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+                                dolorem assumenda nostrum
+                                sunt eaque in nulla quibusdam. Dolorem animi nisi tempora eaque blanditiis beatae dolor quia
+                                odio, temporibus provident reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Delectus tempore aliquam incidunt quisquam accusamus quo velit assumenda deserunt at
+                                quibusdam ex, consectetur atque quos dolorum nobis veritatis. Quis, dignissimos placeat.</p>
+                       
+                    </div>
+            </section>
 
             </div>
 
         </section>
 
-        <section class="photos  bg-dark ">
+        <section class="photos  bg-dark " id="gallery">
 
             <div class="container">
 
@@ -79,25 +84,25 @@
 
                 <div class="row ">
 
-                    <section class="col l4">
+                    <section class="col-sm-6 col-lg-3">
                         <img src="photography/camera-design.jpeg" alt="Image">
                         <img src="photography/elephant.jpeg" alt="Image">
                         <img src="photography/mountain.jpeg" alt="Image">
                     </section>
 
-                    <section class="col l4">
+                    <section class="col-sm-6 col-lg-3">
                         <img src="photography/mountain2.jpeg" alt="Image">
                         <img src="photography/mountain.jpeg" alt="Image">
                         <img src="photography/photographer2.jpeg" alt="Image">
                     </section>
 
-                    <section class="col l4">
+                    <section class="col-sm-6 col-lg-3">
                         <img src="photography/photographer3.jpeg" alt="Image">
-                        <img src="photography/mountain.jpeg" alt="Image">
+                        <img src="photography/photographer.jpeg" alt="Image">
                         <img src="photography/mountain2.jpeg" alt="Image">
                     </section>
 
-                    <section class="col l4">
+                    <section class="col-sm-6 col-lg-3">
                         <img src="photography/mountain.jpeg" alt="Image">
                         <img src="photography/mountain2.jpeg" alt="Image">
                         <img src="photography/photographer2.jpeg" alt="Image">
@@ -108,64 +113,76 @@
 
         </section>
 
-        <section class="blog container">
-
+        <section class="blog container" id="blog">
+            <div class="container">
             <h2 class="text-center">Blog Posts</h2>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis porro, itaque vel
                 eum
                 beatae
                 aliquam quis fugiat rem animi quae, reprehenderit optio omnis dolor ipsam laboriosam nisi labore ad
                 doloribus?</p>
-
+            </div>
 
             <div class="row">
 
-                <section class="col">
+                <section class=" col-sm-12 col-lg-4">
+                        <div class="container">
+
                     <img src="photography/camera-design.jpeg"  alt="Image">
                     <h3>Want to know more about design?</h3>
                     <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis
                         asperiores atque accusamus, sint possimus? Magni, provident? Placeat, est doloremque suscipit
                         labore quia reprehenderit temporibus velit.</p>
-                      <hr>
+                  
+                        <hr>
                         <button class="mybtn">Continue reading...</button>
                         <hr>
+                    </div>
                 </section>
 
-                <section class="col">
-                    <img src="photography/photographer2.jpeg" alt="Image">
-                    <h3>Photography trends 2018.</h3>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis
-                        asperiores atque accusamus, sint possimus? Magni, provident? Placeat, est doloremque suscipit
-                        labore quia reprehenderit temporibus velit illum magni, alias tempora.</p>
-                        <hr>
-                        <button class="mybtn">Continue reading...</button>
-                        <hr>                </section>
+                <section class="col-sm-12 col-lg-4">
+                        <div class="container">
+                    <img src="photography/photographer.jpeg" alt="Image">
+                  
+                            <h3>Want to know more about design?</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis
+                                asperiores atque accusamus, sint possimus? Magni, provident? Placeat, est doloremque suscipit
+                                labore quia reprehenderit temporibus velit.</p>
+                          
+                                <hr>
+                                <button class="mybtn">Continue reading...</button>
+                                <hr>
+                            </div>              </section>
 
-                <section class="col">
+                <section class="col-sm-12 col-lg-4">
+                        <div class="container">
                     <img src="photography/elephant.jpeg" alt="Image">
-                    <h3>Explore the world.</h3>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis
-                        asperiores atque accusamus, sint possimus? Magni, provident? Placeat, est doloremque suscipit
-                        labore quia reprehenderit temporibus velit illum magni, alias tempora.</p>
-                        <hr>
-                        <button class="mybtn">Continue reading...</button>
-                        <hr>                    </section>
+                   
+                            <h3>Want to know more about design?</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis
+                                asperiores atque accusamus, sint possimus? Magni, provident? Placeat, est doloremque suscipit
+                                labore quia reprehenderit temporibus velit.</p>
+                          
+                                <hr>
+                                <button class="mybtn">Continue reading...</button>
+                                <hr>
+                            </div>               </section>
 
             </div>
 
         </section>
 
-        <section class="about  bg-light">
+        <section class="about  bg-light" id="contact">
             <div class="container">
 
             
             <div class="row ">
 
-                <div class="col">
-                    <img src="photography/photographer3.jpeg" alt="photographer3">
+                <div class="col-sm-12 col-lg-6">
+                    <img src="photography/photographer2.jpeg" alt="photographer3">
                 </div>
 
-                <div class="col ">
+                <div class="col-sm-12 col-lg-6 ">
                     <div class="container pt-5">
                     <h2>Send me a message:</h2>
                     <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos odio ipsum corrupti autem,
@@ -173,12 +190,12 @@
                         porro perferendis aperiam!</p>
                     <form action="">
                         <div class="row">
-                            <div class="col l6">
+                            <div class="col-sm-12 col-lg-6">
                                     <div class="form-group">
                                             <input type="text" name="name" id="name" class="form-control" placeholder="Name">
                                         </div>
                             </div>
-                            <div class="col l6">
+                            <div class="col-sm-12 col-lg-6">
   
                                     <div class="form-group">
                                             <input type="text" name="email" id="email" placeholder="Email" class="form-control">
