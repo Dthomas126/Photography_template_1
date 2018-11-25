@@ -1,0 +1,66 @@
+
+
+/*
+*************HEADER**************
+
+*/
+.header{
+    height: 100vh;
+    background: url('../photography/mountain2.jpeg');
+    background-size: cover;
+    background-position-y: center;
+    position: relative;
+    color: white;
+
+    nav{
+
+  padding-top: 15px;
+
+        .nav{
+
+            justify-content: center;
+
+            li{
+                margin: 0 8px;
+
+                a{
+                    font-size: 1.2rem;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .head-group{
+        width: 30%;
+        position: absolute;
+        bottom: 20%;
+        left: 5%;
+        
+    }
+
+
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+// ABOUT SECTION
+
+.about{
+    padding: 5% 0;
+}
+/////////PHOTOS SECTION//////////////
+.photos{
+  padding: 5% 0;
+    .container{
+        .row .col{
+            padding: 0;
+
+        }
+    }
+}
